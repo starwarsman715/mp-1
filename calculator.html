@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility with Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Calculator | Projects</title> <!-- Page title -->
+    <link rel="stylesheet" href="calculator.css"> <!-- Link to CSS file for styling -->
+</head>
+
+<body>
+    <div class="calculator-container"> <!-- Main container for the calculator -->
+        <div class="input-section"> <!-- Section for input fields -->
+            <div class="input-group">
+                <label for="first-number">First Number</label> <!-- Label for the first input -->
+                <input id="first-number" type="number" aria-label="First Number"> <!-- Input for first number -->
+            </div>
+            <div class="input-group">
+                <label for="second-number">Second Number</label> <!-- Label for the second input -->
+                <input id="second-number" type="number" aria-label="Second Number"> <!-- Input for second number -->
+            </div>
+        </div>
+        <div class="buttons-section"> <!-- Section for buttons -->
+            <button onclick="addition()">+</button> <!-- Addition button -->
+            <button onclick="subtraction()">-</button> <!-- Subtraction button -->
+            <button onclick="multiplication()">*</button> <!-- Multiplication button -->
+            <button onclick="division()">/</button> <!-- Division button -->
+            <button onclick="power()">**</button> <!-- Power button -->
+            <button onclick="clearFields()">Clear</button> <!-- Clear button -->
+        </div>
+
+        <!-- Result Display Section -->
+        <div class="result-section">
+            <div id="output"></div> <!-- Div to display the result -->
+        </div>
+    </div>
+
+    <script src="calculator.js"></script> <!-- Link to JavaScript file for functionality -->
+</body>
+
+</html>

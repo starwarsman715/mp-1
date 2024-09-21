@@ -1,0 +1,131 @@
+/* =========================
+   Import Google Font
+   ========================= */
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+   /* =========================
+      Global Styles
+      ========================= */
+   * {
+       margin: 0; /* Reset margin */
+       box-sizing: border-box; /* Include padding and border in element's total width and height */
+   }
+   
+   body {
+       background-color: rgb(220, 255, 236); /* Light green background */
+       font-family: 'Roboto', sans-serif; /* Font style */
+       display: flex; /* Use flexbox for layout */
+       justify-content: center; /* Center content horizontally */
+       align-items: center; /* Center content vertically */
+       min-height: 100vh; /* Full viewport height */
+       padding: 20px; /* Padding to prevent content from touching screen edges */
+   }
+   
+   /* =========================
+      Calculator Container
+      ========================= */
+   .calculator-container {
+       background-color: #ffffff; /* White background for the calculator */
+       padding: 30px; /* Internal padding */
+       border-radius: 10px; /* Rounded corners */
+       max-width: 500px; /* Max width of the calculator */
+   }
+   
+   /* =========================
+      Input Section
+      ========================= */
+   .input-section {
+       display: flex; /* Use flexbox for layout */
+       flex-direction: column; /* Stack inputs vertically */
+       gap: 20px; /* Space between inputs */
+       margin-bottom: 30px; /* Space below input section */
+   }
+   
+   .input-group {
+       display: flex; /* Use flexbox for layout */
+       flex-direction: column; /* Stack label and input vertically */
+   }
+   
+   .input-group label {
+       font-size: calc(16px + 0.2vw); /* Responsive font size for labels */
+       color: rgb(39, 126, 98); /* Dark green for labels */
+   }
+   
+   .input-group input {
+       padding: 10px; /* Internal padding for input fields */
+       font-size: calc(16px + 0.2vw); /* Responsive font size for input fields */
+       border: 1px solid #ccc; /* Light gray border */
+       border-radius: 5px; /* Rounded corners */
+   }
+   
+   /* =========================
+      Buttons Section
+      ========================= */
+   .buttons-section {
+       display: flex; /* Use flexbox for layout */
+       flex-wrap: wrap; /* Allow buttons to wrap to next line */
+       gap: 10px; /* Space between buttons */
+       justify-content: center; /* Center buttons */
+       margin-bottom: 30px; /* Space below buttons section */
+   }
+   
+   .buttons-section button {
+       padding: 15px; /* Internal padding for buttons */
+       font-size: calc(16px + 0.2vw); /* Responsive font size for buttons */
+       border: none; /* Remove default border */
+       border-radius: 5px; /* Rounded corners */
+       background-color: rgb(63, 171, 128); /* Medium green background */
+       color: #ffffff; /* White text color */
+   }
+   
+   .buttons-section button:hover {
+       background-color: #2e8b57; /* Darker green on hover */
+   }
+   
+   /* =========================
+      Result Section
+      ========================= */
+   .result-section {
+       display: flex; /* Use flexbox for layout */
+       justify-content: center; /* Center the result */
+       align-items: center; /* Center vertically */
+   }
+   
+   #output {
+       font-size: calc(20px + 0.2vw); /* Responsive font size for output */
+       color: black; /* Black text color */
+       min-height: 40px; /* Ensures space is reserved for the result */
+   }
+   
+   /* =========================
+      Responsive Styles
+      ========================= */
+   @media (max-width: 750px) {
+       .calculator-container {
+           padding: 20px; /* Reduce padding on smaller screens */
+       }
+   
+       .input-section {
+           gap: 15px; /* Reduce gap between inputs */
+           margin-bottom: 20px; /* Reduce space below input section */
+       }
+   
+       .input-group label {
+           font-size: calc(14px + 0.2vw); /* Slightly smaller font size for labels */
+       }
+   
+       .input-group input {
+           padding: 8px; /* Reduce padding for input fields */
+           font-size: calc(14px + 0.2vw); /* Slightly smaller font size for input fields */
+       }
+   
+       .buttons-section button {
+           padding: 12px; /* Reduce padding for buttons */
+           font-size: calc(14px + 0.2vw); /* Slightly smaller font size for buttons */
+       }
+   
+       #output {
+           font-size: calc(18px + 0.2vw); /* Slightly smaller font size for output */
+       }
+   }
+   
